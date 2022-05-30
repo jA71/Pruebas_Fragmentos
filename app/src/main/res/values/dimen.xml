@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="top_to_bottom_btn">650dp</dimen>
+    <dimen name="btn_radius_cornes">10dp</dimen>
+
+    <!-- Imagen Logo -->
+
+    <dimen name="margin_top_logo">25dp</dimen>
+
+    <dimen name="top_input">105dp</dimen>
+
+    <!-- General Dimens -->
+    <dimen name="margin_end">20dp</dimen>
+    <dimen name="margin_start">20dp</dimen>
+    <dimen name="size_for_btn">20dp</dimen>
+    <dimen name="input_padding">5dp</dimen>
+    <dimen name="margin_bottom">25dp</dimen>
+    <dimen name="margin_top">15dp</dimen>
+    <dimen name="text_size_show">20dp</dimen>
+    <dimen name="text_size_msg">25dp</dimen>
+    <dimen name="msg_top_margin">50dp</dimen>
+    <dimen name="text_size_data">16dp</dimen>
+    <dimen name="margin_top_data">5dp</dimen>
+
+</resources>
