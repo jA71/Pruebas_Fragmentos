@@ -5,7 +5,7 @@ import retrofit2.Retrofit
 class WsClient {
     companion object {
 
-        private const val URL = "http://192.168.1.3/backendRapidoMovil/"
+        private const val URL = "http://172.16.4.55/backendRapidoMovil/"
         private var retrofit: Retrofit? = null
 
         private fun retrofitClient(): Retrofit? {
