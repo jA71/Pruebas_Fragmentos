@@ -4,11 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.pruebas_fragmentos.Adaptador
-import com.example.pruebas_fragmentos.Producto
-import com.example.pruebas_fragmentos.R
 import com.example.pruebas_fragmentos.databinding.ActivityListadoBinding
 import com.example.pruebas_fragmentos.dto.WsClient
+import com.example.pruebas_fragmentos.dto.Producto
+import com.example.pruebas_fragmentos.Adaptador
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -32,8 +31,8 @@ class Listado : AppCompatActivity() {
         WsClient.api()?.buscarListaProductos()?.enqueue(object : Callback<List<Producto>> {
             override fun onResponse(call: Call<List<Producto>>, response: Response<List<Producto>>) {
                 if (response.isSuccessful){
-                    val list = response.body()!!
-                    views.listItem.adapter = Adaptador(list)
+                    val lista = response.body()!!
+                    views.listItem.adapter = Adaptador(lista)
                 }else{
                     Toast.makeText(
                         this@Listado,
@@ -52,5 +51,6 @@ class Listado : AppCompatActivity() {
             }
         })
     }
-}
 
+
+}

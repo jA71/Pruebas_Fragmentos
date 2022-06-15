@@ -8,7 +8,8 @@ import com.example.pruebas_fragmentos.databinding.FragmentProductoBinding
 import com.example.pruebas_fragmentos.dto.Producto
 import com.squareup.picasso.Picasso
 
-class Adaptador (val lista:List<Producto>): RecyclerView.Adapter<Adaptador.ProductoHolder>() {
+
+class Adaptador(val lista: List<Producto>): RecyclerView.Adapter<Adaptador.ProductoHolder>() {
 
     inner class ProductoHolder(fragmentoView: View) : RecyclerView.ViewHolder(fragmentoView){
         val viewHolder: FragmentProductoBinding
